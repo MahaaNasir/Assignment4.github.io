@@ -1,0 +1,200 @@
+<!-- 
+   Student Name: Maha Nasir
+   Student Number: 301266305
+
+   Assignment 4
+   http://studentweb.cencol.ca/mnasir11/COMP213/Assignment4
+ -->
+
+
+<!DOCTYPE html>
+<html lang="en">  
+<div class="box">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation form for CE </title>
+
+    <!-- Linking Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+
+    <!--Linking style.css-->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!--logo-->
+    <a target="blank" href="https://www.centennialcollege.ca/">
+    <img src="cg.jpg" class="logo"> </a>
+    </head>
+    <body>  
+        <div class="container">
+        <h2 class="subheading">Continuing Education/Instructor Evaluation</h2>
+        <p class="instructions">Please take the time to carefully read the each statement. 
+        Fill out the form by <strong>typing</strong> the answers and <strong>selecting</strong> the given options. 
+        Once finished, press the <strong>Submit</strong> button.
+
+        <div class="information">
+            <form>
+                <label>Course&nbsp;Name/Code:</label>
+                <input type="text" name="course" size="20" id="info">
+                <br> 
+                <label>Instructor:</label>
+                <input type="text" name="instructor"  size="20" id="info">
+                <br>
+                <label>Year:</label>   
+                <input type="year" name="year" size="20" id="info">
+                <br>
+                <label>Semester:</label>
+                <input type="radio" name="semester" id="fall">
+                <label for="fall">Fall</label>
+                <input type="radio" name="semester" id="winter">
+                <label for="winter">Winter</label>
+                &nbsp;&nbsp;&nbsp;<input type="radio" name="semester" id="spring">
+                <label for="spring">Spring</label>
+                <br>
+            </form>
+        </div> 
+
+        <div class="info-instructor">
+        <label><h3>Instructor</h3></label>
+        <table >
+         <tr>
+            <th></th>
+            <th>Excellent</th>
+            <th>Good</th>
+            <th>Fair</th>
+            <th>Not Satisfactory</th>
+         </tr>  
+         <tr>  
+            <form>
+            <td id="num">1. Knowledge of subject</td>
+            <td><input type="radio" id="excellent" name="knowledge"></td>
+            <td><input type="radio"  id="good" name="knowledge"></td>
+            <td><input type="radio"  id="fair" name="knowledge"></td>
+            <td><input type="radio"  id="not-satisfactory" name="knowledge"></td>
+            </form>
+         </tr>
+         <tr>
+            <td id="num">2. Helpfulness</td>
+
+            <td><input type="radio" id="excellent"name="helpfulness"></td>
+            <td><input type="radio"  id="good" name="helpfulness"></td>
+            <td><input type="radio"  id="fair" name="helpfulness"></td>
+            <td><input type="radio"  id="not-satisfactory" name="helpfulness"></td>
+         </tr>
+         <tr>
+            <td id="num">3. Courtesy and respect for all students</td>
+            <td><input type="radio" id="excellent" name="courtesy-respect"></td>
+            <td><input type="radio"  id="good"name="courtesy-respect"></td>
+            <td><input type="radio"  id="fair"name="courtesy-respect"></td>
+            <td><input type="radio"  id="not-satisfactory"name="courtesy-respect"></td>
+         </tr>
+         <tr>
+            <td id="num">4. Communication skills</td>
+            <td><input type="radio" id="excellent" name="communication"></td>
+            <td><input type="radio"  id="good" name="communication"></td>
+            <td><input type="radio"  id="fair" name="communication"></td>
+            <td><input type="radio"  id="not-satisfactory" name="communication"></td>
+         </tr>
+         <tr>
+            <td id="num">5. Overall performance</td>
+            <td><input type="radio" id="excellent" name="performance"></td>
+            <td><input type="radio"  id="good" name="performance"></td>
+            <td><input type="radio"  id="fair" name="performance"></td>
+            <td><input type="radio"  id="not-satisfactory" name="performance"></td>
+         </tr>
+        </table>
+        </div>
+
+        <label><h3>Course</h3></label>
+        <table id="info-instructor">
+         <tr>
+            <th></th>
+            <th>Excellent</th>
+            <th>Good</th>
+            <th>Fair</th>
+            <th>Not Satisfactory</th>
+         </tr>  
+         <tr>
+            <td id="num">6. How do you rate the course materials</td>
+            <td><input type="radio" id="excellent" name="course"></td>
+            <td><input type="radio"  id="good" name="course"></td>
+            <td><input type="radio"  id="fair" name="course"></td>
+            <td><input type="radio"  id="not-satisfactory" name="course"></td>
+         </tr>
+         <tr>
+            <td id="num">7. How much did this course meet your expectations</td>
+            <td><input type="radio" id="excellent" name="expectations"></td>
+            <td><input type="radio"  id="good" name="expectations"></td>
+            <td><input type="radio"  id="fair" name="expectations"></td>
+            <td><input type="radio"  id="not-satisfactory" name="expectations"></td>
+         </tr>
+         <tr>
+            <td id="num">8. How would you rate this course (overall)</td>
+            <td><input type="radio" id="excellent" name="rate-course"></td>
+            <td><input type="radio"  id="good" name="rate-course"></td>
+            <td><input type="radio"  id="fair" name="rate-course"></td>
+            <td><input type="radio"  id="not-satisfactory" name="rate-course"></td>
+         </tr>
+        </table>
+
+        <label><h3>General Information</h3></label>
+        <table id="info-instructor">
+         <tr>
+            <th></th>
+            <th>Yes</th>
+            <th>No</th>
+            <th>Not Sure</th>
+         </tr>  
+         <tr>
+            <td id="num"> 9. Was the course outline reviewed/  explained at the beginning of your course
+            </td>
+            <td><input type="radio" id="yes" name="course-outline"></td>
+            <td><input type="radio"  id="no" name="course-outline"></td>
+            <td><input type="radio"  id="not-sure" name="course-outline"></td>
+         </tr>
+         <br>
+         <tr>   
+            <form>
+            <td id="num">10. Would you recommend this course to a friend with the same interests</td>
+            <td><input type="radio" id="yes" name="recommend"></td>
+            <td><input type="radio"  id="no" name="recommend"></td>
+            <td><input type="radio"  id="not-sure" name="recommend"></td>
+        </form>
+         </tr>
+        </table>
+
+        <label><h3>Any Other Comments</h3></label>
+        <div class="comments">
+            <form>
+                11. What is the best thing about this course? 
+                <textarea name="best-thing"  cols="30" rows="3"></textarea>
+                <br> 
+                12. How could we improve this course
+                <textarea name="improve"  cols="30" rows="3"></textarea>
+                <br>
+                13. Other: 
+                <textarea name="other" cols="30" rows="6"></textarea>
+                <br>
+            </form>
+        </div>  
+
+        <form>
+            <input type="submit" value="Submit" id="submit-button">
+        </form> 
+        
+        <div class="contact">
+           <p id="feedback"><i> Thank you for your feedback!</i></p>
+           <p>Visit our <a class="web"  target="blank" href="https://www.centennialcollege.ca/continuingeducation">Website </a>
+            &nbsp;OR&nbsp;
+            <a class="email"  target="blank" a href= "mailto: continuingeducation@centennialcollege.ca"> Email </a> us</p>
+        </div>
+
+        
+       <!-- Footer -->
+       <h6><hr class ="border"></hr>
+       &copy;&nbsp;&nbsp;Copyright Maha Nasir - 301266305 - <a id="webpage-link" href="http://studentweb.cencol.ca/mnasir11/COMP213/Assignment1/"> Student Webpage </a> 
+         <br>
+       &nbsp; &nbsp;&nbsp;&nbsp;Web Interface Design - COMP213 - FALL 2022
+    </body>
+</div>
+</html>
